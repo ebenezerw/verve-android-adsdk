@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.vervewireless.mastersampleapplication"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile (project(':verve_import')) {
+        //exclude module: 'gimbal_import'
+    }
+
+    // Only needed for MoPub
+    // Begin MoPub Requirenments
+    compile('com.mopub:mopub-sdk:3.10.0@aar') {
+        transitive = true
+    }
+    // End MoPub
+}

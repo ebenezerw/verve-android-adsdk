@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:verve="http://schemas.android.com/apk/lib/com.vervewireless.advert"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.vervewireless.advert.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        verve:ad_keyword="adsdkexample"
+        verve:ad_size="BANNER"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/adView">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dip">
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dip"
+                android:checked="true"
+                android:textOff="@string/trackingOff"
+                android:textOn="@string/trackingOn"/>
+
+            <Button
+                android:id="@+id/buttonRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonRefresh"/>
+
+            <Button
+                android:id="@+id/buttonInterstitial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonInterstitialAd"/>
+
+            <Button
+                android:id="@+id/buttonStartSplash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/request_splash_ad"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

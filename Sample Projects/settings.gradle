@@ -1,8 +1,4 @@
-include ':vervesdk_sample'
-include ':dfp_banner_sample'
-include ':dfp_interstitial_sample'
-include ':mopub_banner_sample'
-include ':mopub_interstitial_sample'
+include ':master_sample_application'
 
 include ':verve_import'
 project(':verve_import').projectDir = file('../Verve Integration/verve_import')
@@ -10,6 +6,8 @@ project(':verve_import').projectDir = file('../Verve Integration/verve_import')
 include ':VRV-moat-mobile-app-kit-1.2.3'
 project(':VRV-moat-mobile-app-kit-1.2.3').projectDir = file('../Verve Integration/VRV-moat-mobile-app-kit-1.2.3')
 
-include ':Verve_AdSDK_3.0.2'
-project(':Verve_AdSDK_3.0.2').projectDir = file('../Verve Integration/Verve_AdSDK_3.0.2')
+include ':Verve_AdSDK_3.1.0'
+project(':Verve_AdSDK_3.1.0').projectDir = file('../Verve Integration/Verve_AdSDK_3.1.0')
 
+include ':gimbal_import'
+project(':gimbal_import').projectDir = file('../Verve Integration/gimbal_import')

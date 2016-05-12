@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vervewireless.mastersampleapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".SampleApplication">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".VerveSample"/>
+        <activity android:name=".SplashManagerSample"/>
+
+        <activity android:name=".dfp.DfpBannerSample"/>
+        <activity android:name=".dfp.DfpInterstitialSample"/>
+
+        <activity android:name=".mopub.MoPubBannerSample"/>
+        <activity android:name=".mopub.MoPubInterstitialSample"/>
+
+
+        <!--Only needed for MoPub-->
+        <!--Start MoPub Activities-->
+        <activity android:name="com.mopub.mobileads.MoPubActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name="com.mopub.mobileads.MraidActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name="com.mopub.common.MoPubBrowser"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name="com.mopub.mobileads.MraidVideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <!--End MoPub Activities-->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Verve Sample Application</string>
+    <string name="refresh">Refresh</string>
+    <string name="load_interstitial">Load Interstitial</string>
+
+    <string name="verve">Verve</string>
+    <string name="verve_sdk_samples">Verve SDK Samples</string>
+    <string name="buttonRefresh">Refresh Banner Ad</string>
+    <string name="buttonInterstitialAd">Show Interstitial Ad</string>
+    <string name="trackingOn">User Tracking ON</string>
+    <string name="trackingOff">User Tracking OFF</string>
+    <string name="request_splash_ad">Request Splash Ad</string>
+
+    <string name="splash_manager_sample">Splash Manager Sample</string>
+    <string name="start_splash_manager">Start Splash Manager</string>
+    <string name="stop_splash_manager">Stop Splash Manager</string>
+    <string name="settings_unit">[msec]</string>
+    <string name="timeout">Timeout [msec]</string>
+    <string name="duration">Duration [msec]</string>
+    <string name="interval">Interval [msec]</string>
+    <string name="splash_manager_settings">SPLASH MANAGER SETTINGS</string>
+
+    <string name="dfp">Dfp</string>
+    <string name="dfp_banner_sample">Dfp Banner Sample</string>
+    <string name="dfp_interstitial_sample">Dfp Interstitial Sample</string>
+
+    <string name="mopub">MoPub</string>
+    <string name="mopub_banner_sample">MoPub Banner Sample</string>
+    <string name="mopub_interstitial_sample">MoPub Interstitial Sample</string>
+
+    <!--Uncomment this if you want to show Permission Explanation dialogs -->
+    <!--title is optional -->
+    <!--<string name="location_permission_explanation_title">Location explanation title</string>-->
+    <!--<string name="location_permission_explanation_message">Location explanation message</string>-->
+    <!--<string name="storage_permission_explanation_title">Storage explanation title</string>-->
+    <!--<string name="storage_permission_explanation_message">Storage explanation message</string>-->
+
+</resources>

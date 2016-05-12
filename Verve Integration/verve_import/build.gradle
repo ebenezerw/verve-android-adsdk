@@ -31,17 +31,14 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:22.2.1'
     compile 'com.google.android.gms:play-services-ads:8.4.0'
     compile 'com.google.android.gms:play-services-location:8.4.0'
-    compile 'com.google.android.gms:play-services-gcm:8.4.0'
     //ALTBEACON
     compile 'org.altbeacon:android-beacon-library:2.6.1'
     //GIMBAL
-    compile files('libs/gimbal_2.32.jar')
-    compile files('libs/gimbal-slf4j-impl.jar')
-    compile files('libs/slf4j-api.jar')
+    compile project(':gimbal_import')
     //MOAT
     compile project(':VRV-moat-mobile-app-kit-1.2.3')
     //GSON
     compile 'com.google.code.gson:gson:2.4'
     //AdSDK
-    compile project(':Verve_AdSDK_3.0.2')
+    compile project(':Verve_AdSDK_3.1.0')
 }

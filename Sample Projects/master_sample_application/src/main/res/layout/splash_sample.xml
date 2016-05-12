@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dip"
+            android:checked="true"
+            android:textOff="@string/trackingOff"
+            android:textOn="@string/trackingOn"
+            android:padding="10dip"/>
+
+        <ToggleButton
+            android:id="@+id/toggleSplashButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dip"
+            android:checked="true"
+            android:textOff="@string/start_splash_manager"
+            android:textOn="@string/stop_splash_manager"
+            android:padding="10dip" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_manager_settings"
+            android:padding="10dip"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <FrameLayout android:id="@+id/shadowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <com.vervewireless.mastersampleapplication.SettingsLayout
+                android:id="@+id/settingsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dip"
+                android:layout_gravity="top">
+
+                <include android:id="@+id/timeoutView"
+                    layout="@layout/settings_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <include android:id="@+id/durationView"
+                    layout="@layout/settings_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <include android:id="@+id/intervalView"
+                    layout="@layout/settings_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.vervewireless.mastersampleapplication.SettingsLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>
